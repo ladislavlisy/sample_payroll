@@ -1,14 +1,18 @@
 SamplePayroll::Application.routes.draw do
-  match '/contact', :to => 'page#contact'
-  match '/about', :to => 'page#about'
-  match '/help', :to => 'page#help'
-  root :to => 'page#home'
+  get "users/new"
+
+  match '/contact', :to => 'pages#contact'
+  match '/about', :to => 'pages#about'
+  match '/help', :to => 'pages#help'
+  root :to => 'pages#home'
   
-  get "page/home"
+  get "pages/home"
 
-  get "page/contact"
+  get "pages/contact"
 
-  get "page/about"
+  get "pages/about"
+  
+  get "pages/help"
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
