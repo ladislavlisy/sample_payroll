@@ -8,6 +8,10 @@ gem 'rails', '3.1.0'
 gem 'sqlite3', :group => :development
 # gem 'sqlite3-ruby', '1.3.3' , :require => 'sqlite3', :group => :development
 
+group :production do
+  gem 'pg', '0.13.2'
+end
+
 group :development do
 	gem 'rspec-rails', '2.9.0'
 end
