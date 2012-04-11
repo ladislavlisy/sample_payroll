@@ -14,12 +14,18 @@ end
 
 group :development do
 	gem 'rspec-rails', '2.9.0'
+	gem 'annotate', '2.4.0',
+        :git => 'git://github.com/jeremyolliver/annotate_models.git', 
+        :branch => 'rake_compatibility'
 end
 
 group :test do
 	gem 'rspec', '2.9.0'
 	gem 'webrat', '0.7.3'
 	gem 'spork', '0.9.0'
+	gem 'annotate', '2.4.0',
+        :git => 'git://github.com/jeremyolliver/annotate_models.git', 
+        :branch => 'rake_compatibility'
 end
 
 # Gems used only for assets and not required
