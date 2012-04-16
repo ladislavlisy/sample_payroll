@@ -12,6 +12,7 @@ gem 'will_paginate', '3.0.3'
 
 group :production do
   gem 'pg', '0.13.2'
+	gem 'faker', '1.0.1'
 end
 
 group :development do
